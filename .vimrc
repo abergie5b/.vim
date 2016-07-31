@@ -1,16 +1,11 @@
-set nocompatible
-filetype off
+call pathogen#infect()
+call pathogen#helptags()
 
-"runtime path
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+autocmd BufEnter * nested :call tagbar#autoopen(0)
 
-Plugin 'gmarik/Vundle.vim'
-"start plugins
-
-"end plugins
-call#Vundle#end()
-filetype plugin indent on
+nmap <F8> :TagbarToggle<CR>
+nmap H <C-w>j
+nmap L <C-w>k
 
 syntax on
 set cul
@@ -18,3 +13,5 @@ set number
 set incsearch
 colors industry
 set cindent
+
+filetype plugin indent on
