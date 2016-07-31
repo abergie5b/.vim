@@ -8,7 +8,7 @@ let g:syntastic_python_checkers = ['pyflakes', 'python', 'pycodestyle', 'pep8']
 
 set cul
 set number
-set incsearch
+set hlsearch
 set autochdir
 set cindent
 
