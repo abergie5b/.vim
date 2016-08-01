@@ -8,16 +8,20 @@ let g:syntastic_python_checkers = ['pyflakes', 'python', 'pycodestyle', 'pep8']
 
 set cul
 set number
+set nowrap
 set hlsearch
+set incsearch
 set autochdir
-set cindent
+set autoindent
 
 set foldmethod=indent
 set foldlevel=99
 nmap <space> za
 
-nmap H <C-w>j
-nmap L <C-w>k
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
 
 syntax on
 colors industry
