@@ -4,7 +4,7 @@ call pathogen#helptags()
 autocmd BufEnter * nested :call tagbar#autoopen(0)
 nmap <F8> :TagbarToggle<CR>
 
-let g:syntastic_python_checkers = ['pyflakes', 'python', 'pycodestyle', 'pep8']
+let g:syntastic_python_checkers = ['python', 'pycodestyle']
 
 set cul
 set number
@@ -30,5 +30,5 @@ nmap <C-l> <C-w>l
 vnoremap <F5> :!python <CR>
 
 syntax on
-colors industry
+colors evening
 filetype plugin indent on
