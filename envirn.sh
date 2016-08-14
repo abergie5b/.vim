@@ -2,6 +2,7 @@
 sudo apt-get install vim
 ln -s ~/.vim/.vimrc ~/.vimrc
 sudo apt-get install curl
+sudo apt-get install exuberant-ctags
 mkdir $HOME/src
 mkdir $HOME/src/c++
 mkdir $HOME/src/python
