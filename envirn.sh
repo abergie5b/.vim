@@ -1,7 +1,6 @@
 #!/bin/bash
-sudo apt-get update
 sudo apt-get install vim
-sudo apt-get install git-core
+sudo apt-get install curl
 mkdir $HOME/src
 mkdir $HOME/src/c++
 mkdir $HOME/src/python
