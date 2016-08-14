@@ -30,5 +30,5 @@ nmap <C-l> <C-w>l
 vnoremap <F5> :!python <CR>
 
 syntax on
-colors evening
+"colors evening
 filetype plugin indent on
