@@ -33,7 +33,6 @@ set tabstop=8
 set textwidth=79
 set autoindent
 
-
 "Mappings
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -44,5 +43,8 @@ noremap <space> za
 
 noremap <C-n> :nohl <CR>
 inoremap <C-e> <C-o>$
+
+vnoremap <Tab> > <CR>
+vnoremap <S-Tab> < <CR>
 
 filetype plugin indent on
