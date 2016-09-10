@@ -8,7 +8,7 @@ autocmd BufEnter * nested :call tagbar#autoopen(0)
 nmap <F8> :TagbarToggle<CR>
 
 "Syntax
-let g:syntastic_python_checkers = ["python", "pycodestyle"]
+let g:syntastic_python_checkers = ["pyflakes", "python", "pycodestyle"]
 let g:syntastic_python_pycodestyle_exec = "/home/dpassarelli/.vim/bundle/pycodestyle/pycodestyle.py"
 
 set title
@@ -24,12 +24,10 @@ set cursorline
 set foldmethod=indent
 set foldlevel=99
 syntax on
-color evening
 
 "Python Config
 set shiftwidth=4
-set softtabstop=4
-set tabstop=8
+"set softtabstop=4
 set textwidth=79
 set autoindent
 
