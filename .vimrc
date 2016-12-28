@@ -5,6 +5,21 @@ autocmd BufEnter * nested :call tagbar#autoopen(0)
 nmap <F8> :TagbarToggle<CR>
 
 let g:syntastic_python_checkers = ['python', 'pycodestyle']
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.readonly = ''
 
 set cul
 set number
@@ -16,6 +31,9 @@ set incsearch
 set autochdir
 set cindent
 set hidden
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
 set foldmethod=indent
 set foldlevel=99
@@ -30,11 +48,11 @@ nmap <C-n> :nohl <CR>
 vnoremap <F5> :!python <CR>
 
 " Map to buttons
-nnoremap <C-Left> :call TmuxResize('h', 1)<CR>
-nnoremap <C-Down> :call TmuxResize('j', 1)<CR>
-nnoremap <C-Up> :call TmuxResize('k', 1)<CR>
-nnoremap <C-Right> :call TmuxResize('l', 1)<CR>
+nnoremap <F8> :call TmuxResize('h', 1)<CR>
+nnoremap <F9> :call TmuxResize('j', 1)<CR>
+nnoremap <F10> :call TmuxResize('k', 1)<CR>
+nnoremap <F11> :call TmuxResize('l', 1)<CR>
 
 syntax on
-"colors evening
+colors evening
 filetype plugin indent on
