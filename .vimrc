@@ -54,5 +54,5 @@ nnoremap <F10> :call TmuxResize('k', 1)<CR>
 nnoremap <F11> :call TmuxResize('l', 1)<CR>
 
 syntax on
-colors evening
+colors default
 filetype plugin indent on
