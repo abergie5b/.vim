@@ -5,4 +5,6 @@ git clone https://github.com/PyCQA/pycodestyle
 git clone https://github.com/scrooloose/syntastic
 git clone https://github.com/vim-airline/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes
+git clone https://github.com/scrooloose/nerdtree
+git clone https://github.com/ryanoasis/vim-devicons
 cp -r vim-pathogen/autoload ../

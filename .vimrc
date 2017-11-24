@@ -1,4 +1,8 @@
-﻿call pathogen#infect()
+﻿autocmd vimenter * NERDTree
+
+set encoding=utf8
+
+call pathogen#infect()
 call pathogen#helptags()
 
 autocmd BufEnter * nested :call tagbar#autoopen(0)
@@ -55,5 +59,5 @@ nnoremap <F10> :call TmuxResize('k', 1)<CR>
 nnoremap <F11> :call TmuxResize('l', 1)<CR>
 
 syntax on
-colors default
+colors koehler
 filetype plugin indent on
