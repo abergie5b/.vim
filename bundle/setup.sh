@@ -7,4 +7,5 @@ git clone https://github.com/vim-airline/vim-airline
 git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/ryanoasis/vim-devicons
+git clone https://github.com/ryanoasis/nerd-fonts
 cp -r vim-pathogen/autoload ../
