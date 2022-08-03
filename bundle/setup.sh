@@ -9,10 +9,20 @@ git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/ryanoasis/vim-devicons
 git clone https://github.com/ap/vim-css-color
 git clone https://github.com/dhruvasagar/vim-table-mode
+git clone https://github.com/pangloss/vim-javascript
+
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts && ./install.sh Hack
 cd -
+
+# 
+git clone https://github.com/valloric/youcompleteme
+cd youcompleteme && git submodule update --init --recursive
+cd -
+
 git clone https://github.com/powerline/fonts
 cd fonts && ./install
 cd -
+
 cp -r vim-pathogen/autoload ../
+

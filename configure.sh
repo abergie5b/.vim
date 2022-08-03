@@ -1,6 +1,5 @@
 #!/bin/bash
-sudo apt-get install vim
-sudo apt-get install tmux
-sudo apt-get install zsh
-sudo apt-get install exuberant-ctags
+sudo apt install -y vim tmux zsh exuberant-ctags \
+    build-essential cmake vim-nox python3-dev \
+    mono-complete golang nodejs default-jdk npm
 export ZSH_CUSTOM=$HOME/themes
